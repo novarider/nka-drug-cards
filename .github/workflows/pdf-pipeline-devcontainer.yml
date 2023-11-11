@@ -18,4 +18,5 @@ jobs:
         with:
           # Change this to be your CI task/script
           imageName: 'hub.docker.com/hegerdes/vscode-latex'
-          runCmd: yarn test
+          runCmd": 'pdflatex main.tex'
+
