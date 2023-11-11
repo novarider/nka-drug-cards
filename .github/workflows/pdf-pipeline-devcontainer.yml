@@ -24,6 +24,5 @@ jobs:
       - name: Upload PDF to the workflow tab
         uses: actions/upload-artifact@v3
         with:
-          name: main.pdf
-          path: main.pdf
+          path: nka-drug-cards.pdf
 

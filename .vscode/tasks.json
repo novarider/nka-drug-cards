@@ -6,12 +6,18 @@
         {
             "label": "Make pdf",
             "type": "shell",
-            "command": "pdflatex main.tex",
+            "command": "pdflatex -jobname=nka-drug-cards main.tex",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "rm -rf *.aux *.log *.nav *.out *.pdf *.snm *.toc",
+            "problemMatcher": [],
         }
     ]
 }
