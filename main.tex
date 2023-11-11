@@ -1,0 +1,112 @@
+% settings
+\documentclass[12pt]{beamer}
+
+\usetheme{default}
+
+% meta
+\title {NKA Lernkarten: Medikamente}
+\author {Patrick Rudigier}
+\date {November 2023}
+
+% content
+\begin{document}
+
+\def\boxheight{0.4}
+\def\boxwidth{0.5}
+
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bleudefrance}{rgb}{0.19, 0.55, 0.91}
+\definecolor{guppiegreen}{rgb}{0.0, 1.0, 0.5}
+\definecolor{americanrose}{rgb}{1.0, 0.01, 0.24}
+\definecolor{brilliantlavender}{rgb}{0.96, 0.73, 1.0}
+\definecolor{brilliantrose}{rgb}{1.0, 0.33, 0.64}
+\definecolor{gainsboro}{rgb}{0.86, 0.86, 0.86}
+
+\setbeamercolor{indikation}{fg=black,bg=guppiegreen}
+\setbeamercolor{kontraindikation}{fg=black,bg=americanrose}
+\setbeamercolor{wirkung}{fg=white,bg=bleudefrance}
+\setbeamercolor{nebenwirkung}{fg=black,bg=amber}
+\setbeamercolor{dosierung}{fg=black,bg=brilliantlavender}
+\setbeamercolor{zusammensetzung}{fg=black,bg=brilliantrose}
+\setbeamercolor{bemerkung}{fg=black,bg=gainsboro}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{
+    \textbf{Wirkstoffname}
+    \textit{(Handelsname)}
+}
+    \begin{tabular}{c c}
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{indikation}
+        Indikation
+        \end{beamercolorbox} & 
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{kontraindikation}
+        Kontraindikation 
+        \end{beamercolorbox} \\
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{wirkung}
+        Wirkung
+        \end{beamercolorbox} & 
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{nebenwirkung}
+        Nebenwirkung
+        \end{beamercolorbox} \\
+    \end{tabular}
+\end{frame}
+\begin{frame}{
+    \textbf{Wirkstoffname}
+    \textit{(Handelsname)}
+}
+    \begin{tabular}{c c}
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{dosierung}
+        Dosierung
+        \end{beamercolorbox} & 
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{zusammensetzung}
+        Zusammensetzung
+        \end{beamercolorbox} \\
+        \multicolumn{2}{}{}
+        \begin{beamercolorbox}[wd=\textwidth,ht=\boxheight\textheight,sep=1em]{bemerkung}
+        Bemerkung
+        \end{beamercolorbox} \\
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{
+    \textbf{Wirkstoffname}
+    \textit{(Handelsname)}
+}
+    \begin{tabular}{c c}
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{indikation}
+        Indikation
+        \end{beamercolorbox} & 
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{kontraindikation}
+        Kontraindikation 
+        \end{beamercolorbox} \\
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{wirkung}
+        Wirkung
+        \end{beamercolorbox} & 
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{nebenwirkung}
+        Nebenwirkung
+        \end{beamercolorbox} \\
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{
+    \textbf{Wirkstoffname}
+    \textit{(Handelsname)}
+}
+    \begin{tabular}{c c}
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{dosierung}
+        Dosierung
+        \end{beamercolorbox} & 
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{zusammensetzung}
+        Zusammensetzung
+        \end{beamercolorbox} \\
+        \multicolumn{2}{}{}
+        \begin{beamercolorbox}[wd=\textwidth,ht=\boxheight\textheight,sep=1em]{bemerkung}
+        Bemerkung
+        \end{beamercolorbox} \\
+    \end{tabular}
+\end{frame}
+
+\end{document}
