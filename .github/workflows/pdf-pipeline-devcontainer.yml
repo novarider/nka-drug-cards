@@ -1,4 +1,4 @@
-name: 'build' 
+name: 'Create learning cards pdf (with devcontainer)' 
 on: # rebuild any PRs and main branch changes
   pull_request:
   push:
@@ -17,4 +17,5 @@ jobs:
         uses: devcontainers/ci@v0.3
         with:
           # Change this to be your CI task/script
+          imageName: 'hub.docker.com/hegerdes/vscode-latex',
           runCmd: yarn test
