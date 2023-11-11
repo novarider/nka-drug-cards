@@ -3,6 +3,13 @@
 
 \usetheme{default}
 
+\setbeamersize
+{
+    text margin left=0cm,
+    text margin right=0cm,
+}
+
+
 % meta
 \title {NKA Lernkarten: Medikamente}
 \author {Patrick Rudigier}
@@ -11,8 +18,8 @@
 % content
 \begin{document}
 
+\def\boxwidth{0.47}
 \def\boxheight{0.4}
-\def\boxwidth{0.5}
 
 \definecolor{amber}{rgb}{1.0, 0.75, 0.0}
 \definecolor{bleudefrance}{rgb}{0.19, 0.55, 0.91}
@@ -43,6 +50,8 @@
 }
     \begin{tabular}{c c}
         \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{indikation}
+        % \tiny
+        % \small
         Indikation
         \end{beamercolorbox} & 
         \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{kontraindikation}
@@ -84,7 +93,15 @@
 }
     \begin{tabular}{c c}
         \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{indikation}
-        Indikation
+        \begin{itemize}
+            \item Schmerzen
+            \item auch bei koronarer Herzkrankheit
+            \item x
+            \item x
+            \item x
+            \item x
+            \item x
+        \end{itemize}
         \end{beamercolorbox} & 
         \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{kontraindikation}
         Kontraindikation 
