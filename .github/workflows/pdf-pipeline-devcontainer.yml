@@ -22,9 +22,8 @@ jobs:
           runCmd: 'pdflatex main.tex'
           push: never
       - name: Upload PDF to the workflow tab
-        id: upload-workflow-tab
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
-          name: cards.pdf
+          name: main.pdf
           path: main.pdf
 
