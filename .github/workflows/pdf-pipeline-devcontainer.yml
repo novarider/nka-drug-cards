@@ -19,11 +19,10 @@ jobs:
           # Change this to be your CI task/script
           imageName: 'hub.docker.com/hegerdes/vscode-latex'
           cacheFrom: 'hub.docker.com/hegerdes/vscode-latex'
-          runCmd: 'pdflatex main.tex'
+          runCmd: 'pdflatex -jobname=nka-drug-cards main.tex'
           push: never
       - name: Upload PDF to the workflow tab
         uses: actions/upload-artifact@v3
         with:
-          name: nka-drug-cards.pdf
           path: nka-drug-cards.pdf
 
