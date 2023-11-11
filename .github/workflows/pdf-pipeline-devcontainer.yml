@@ -18,7 +18,9 @@ jobs:
         with:
           # Change this to be your CI task/script
           imageName: 'hub.docker.com/hegerdes/vscode-latex'
-          runCmd": 'pdflatex main.tex'
+          cacheFrom: 'hub.docker.com/hegerdes/vscode-latex'
+          runCmd: 'pdflatex main.tex'
+          push: never
       - name: Upload PDF to the workflow tab
         id: upload-workflow-tab
         uses: actions/upload-artifact@v2
