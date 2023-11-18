@@ -3,6 +3,8 @@
 
 \usetheme{default}
 
+\usepackage{tikz}
+
 \setbeamersize
 {
     text margin left=0cm,
@@ -48,6 +50,55 @@
 \begin{frame}
     \titlepage
 \end{frame}
+%--------------------------------------
+% Vorlage tkiz
+%--------------------------------------
+\begin{frame}{
+    \textbf{tikz example}
+    \textit{(tikz example)}
+}
+    \begin{tabular}{c c}
+        \begin{tikzpicture}
+            node [draw rectangle, rounded corners=2pt, fill=red]{
+                Indikation
+            };
+        \end{tikzpicture}
+        % \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{indikation}
+        %     Indikation
+        % \end{beamercolorbox} 
+        & 
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{kontraindikation}
+            Kontraindikation 
+        \end{beamercolorbox} \\
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{wirkung}
+            Wirkung
+        \end{beamercolorbox} & 
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{nebenwirkung}
+            Nebenwirkung
+        \end{beamercolorbox} \\
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{
+    \textbf{Wirkstoffname}
+    \textit{(Handelsname)}
+}
+    \begin{tabular}{c c}
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{dosierung}
+            Dosierung
+        \end{beamercolorbox} & 
+        \begin{beamercolorbox}[wd=\boxwidth\textwidth,ht=\boxheight\textheight,sep=1em]{zusammensetzung}
+            Zusammensetzung
+        \end{beamercolorbox} \\
+        \multicolumn{2}{}{}
+        \begin{beamercolorbox}[wd=\textwidth,ht=\boxheight\textheight,sep=1em]{bemerkung}
+            Bemerkung
+        \end{beamercolorbox} \\
+    \end{tabular}
+\end{frame}
+%--------------------------------------
+% Ende Vorlage
+%--------------------------------------
 
 %--------------------------------------
 % Vorlage
